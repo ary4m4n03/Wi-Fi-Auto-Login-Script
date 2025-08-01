@@ -45,7 +45,8 @@ Instead of manually opening a browser and signing in each time, the script:
 
 
 ## Disclaimer
-Password stored in plain text inside .ps1 file. This method should only be used for low-security credentials, such as a public or university WiFi network. Do not use this method for sensitive passwords.
+Password stored in plain text inside .ps1 file. This method should only be used for low-security credentials, such as a public Hotel or University Wi-Fi network. 
+Do not use this method for sensitive passwords.
 This script is for educational purposes only.
 
 
