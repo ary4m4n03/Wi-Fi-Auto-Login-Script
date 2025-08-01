@@ -42,7 +42,7 @@ Instead of manually opening a browser and signing in each time, the script:
 
 3. **Create a scheduled task**
 
-
+---
 
 ## Disclaimer
 Password stored in plain text inside .ps1 file. This method should only be used for low-security credentials, such as a public Hotel or University Wi-Fi network. 
