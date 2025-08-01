@@ -13,8 +13,10 @@ Instead of manually opening a browser and signing in each time, the script:
 ---
 
 ## Features
-- **Automatic login** to Wi-Fi captive portals.
-- Uses **PowerShell** for HTTP requests and form parsing.  
+- Handles session cookies to maintain a valid login session..
+- Uses **PowerShell** for HTTP requests and form parsing.
+- Bypasses common SSL certificate errors and security pop-ups.
+- Mimics browser headers (User-Agent, Referer) to avoid being blocked.
 - Configurable for different networks (SSID and login URL).  
 - Runs in the background via **Task Scheduler** once setup (no manual execution needed).  
 
@@ -32,21 +34,18 @@ Instead of manually opening a browser and signing in each time, the script:
 1. **Clone this repo**
    ```bash
    git clone https://github.com/ary4m4n03/Wifi-Auto-Login-Script.git
-Edit the script
+2. **Configure the script**
+   Open the Wifi-Login.ps1 file and modify the variables in the CONFIGURATION section at the top:
+   $loginPageUrl: Replace the placeholder with the full URL you are redirected to when you first connect to the WiFi.
+   $username: Your username for the portal.
+   $password: Your password.
 
-Add your Wi-Fi SSID.
+3. **Create a scheduled task**
 
-Update the captive portal login URL and form field names.
 
-Insert your credentials (or configure a secure credential store).
-
-Create a scheduled task
-
-Use the included XML task definition (or set up manually in Task Scheduler).
-
-Trigger: When connecting to your chosen Wi-Fi.
 
 ## Disclaimer
+Password stored in plain text inside .ps1 file. This method should only be used for low-security credentials, such as a public or university WiFi network. Do not use this method for sensitive passwords.
 This script is for educational purposes only.
 Use only on networks you are authorized to access. The author is not responsible for misuse or any violations of terms of service.
 
