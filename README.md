@@ -35,12 +35,16 @@ Instead of manually opening a browser and signing in each time, the script:
    ```bash
    git clone https://github.com/ary4m4n03/Wifi-Auto-Login-Script.git
 2. **Configure the script**
-   Open the Wifi-Login.ps1 file and modify the variables in the CONFIGURATION section at the top:
+   Open the autologinautomated.ps1 file and modify the variables in the CONFIGURATION section at the top:
    $loginPageUrl: Replace the placeholder with the full URL you are redirected to when you first connect to the WiFi.
    $username: Your username for the portal.
    $password: Your password.
+   Use the Network section from the developer tools in the browser of your choice and check the Preserve Log box and perform the login manually and check the js file execution at time of login
+   Click on the file to find the payload section of the login action. From here you can find the pageurl, Id and password as well as the referer and user-agent details.
+   Paste these into the script.
 
 3. **Create a scheduled task**
+   To automate the script to run at startup and whenever the specific Wi-Fi is connected, you can create a custom task in task scheduler.
 
 ---
 
