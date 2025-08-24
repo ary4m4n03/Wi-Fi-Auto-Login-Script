@@ -1,7 +1,7 @@
 # Wi-Fi Auto Login Script (PowerShell)
 
 ## Overview
-This project automates the login process for Wi-Fi networks that use **captive portals** (webpages that require you to enter credentials before granting internet access).  
+This project automates the login process for Wi-Fi networks that use **captive portals** (webpages that require you to enter credentials before granting internet access) for Windows systems.  
 
 Instead of manually opening a browser and signing in each time, the script:
 
@@ -39,9 +39,10 @@ Instead of manually opening a browser and signing in each time, the script:
      - $loginPageUrl: Replace the placeholder with the full URL you are redirected to when you first connect to the WiFi.  
      - $username: Your username for the portal.   
      - $password: Your password.   
-   - Use the Network section from the developer tools in the browser of your choice and check the Preserve Log box, then perform the login manually and check the js file execution at time of login.  
-   - Click on the file to find the payload section of the login action. From here you can find the pageurl, Id and password as well as the referer and user-agent details (Optional).   
-   - Paste these into the script at the specified places.
+   - You can alternatively, use the Network section from the developer tools in the browser of your choice and check the Preserve Log box, then perform the login manually and check the js file execution at time of login:
+      - Click on the file to find the payload section of the login action. From here you can find the pageurl, Id and password as well as the referer and user-agent details.   
+      - In most cases, the referer and user-agent provided in the script are valid. However, if the script is not working, it is worth checking and using the ones found in the payload section.   
+      - Paste these into the script at the specified places. 
 
 3. **Create a scheduled task:**  
    To automate the script to run at startup and whenever the specific Wi-Fi is connected, you can import WiFi_Auto_Login.xml in task scheduler.  
