@@ -53,7 +53,7 @@ Instead of manually opening a browser and signing in each time, the script:
 ---
 
 ## Disclaimer
-Password needs to be stored in plain text inside .ps1 file. This method should only be used for low-security credentials, such as a public Hotel or University Wi-Fi network.   
+Captive Portal Login Password needs to be stored in plain text inside .ps1 file. This method should only be used for low-security credentials, such as a public Hotel or University Wi-Fi network.   
 Do not use this method for sensitive passwords.   
 This script is for educational purposes only.   
 
