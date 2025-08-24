@@ -1,5 +1,5 @@
 # Wi-Fi Auto Login Script (PowerShell)
-
+---
 ## Overview
 This project automates the login process for Wi-Fi networks that use **captive portals** (webpages that require you to enter credentials before granting internet access) for Windows systems.  
 
