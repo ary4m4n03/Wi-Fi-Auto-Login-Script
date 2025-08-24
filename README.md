@@ -40,7 +40,7 @@ Instead of manually opening a browser and signing in each time, the script:
      - $username: Your username for the portal.   
      - $password: Your password.   
    - Use the Network section from the developer tools in the browser of your choice and check the Preserve Log box, then perform the login manually and check the js file execution at time of login.  
-   - Click on the file to find the payload section of the login action. From here you can find the pageurl, Id and password as well as the referer and user-agent details.   
+   - Click on the file to find the payload section of the login action. From here you can find the pageurl, Id and password as well as the referer and user-agent details (Optional).   
    - Paste these into the script at the specified places.
 
 3. **Create a scheduled task:**  
